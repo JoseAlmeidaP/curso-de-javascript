@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com  DOM</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+            color: rgb(3, 15, 25);
+            font: normal 14pt Arial ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o<strong> DOM</strong> em javaScript</p>
+    <div id='msg'>Clique em mim</div>
+    <script>
+        var p1 = window.document.getElementsByTagName("p")[1]/* 
+        getElementsByTagName, busca o que está dentro do parenteses e o que está dentro do
+        dos  conchetes busca ordem do que está dentro dos parenteses */
+        window.document.write("Está escrito assim: " + p1.innerHTML)//no lugar de usar
+        //innertex, usei ineerhtml que ai ele tras a formatação junto
+        var d = window.document.getElementById('msg')
+        d.style.background = 'red'
+        //se eu quiser fazer uma troca é só fazer o comando a baixo
+        d.innerText = 'José'
+        // veja que saiu o conteudo da div que era Clique em mim, agora mostra josé
+    </script>
+</body>
+</html>

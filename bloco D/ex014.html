@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verificar Nascionalidade</title>
+</head>
+<body>
+  <h1> Nascionalidade</h1>
+  <label for="inputPais">Digite o seu país:</label>
+  <input type="text" id="inputPais">
+  <button onclick="verificarPais()">Verificar</button>
+  <script>
+    function verificarPais() {
+      var pais = document.getElementById("inputPais").value;     
+      if (pais.toLowerCase() === "brasil") {
+        alert("Você é brasileiro!");
+      } else if (pais.toLowerCase() === "Brazil") {
+        alert("Você é Brasileiro!!");
+      } else {
+        alert("Você não é brasileiro!");
+      }
+    }
+  </script>
+</body>
+</html>
